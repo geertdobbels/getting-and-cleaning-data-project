@@ -2,8 +2,8 @@
 ## Raw Data
 
 URI For the raw data are: 
-. http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
-. https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+* http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+* https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 The first URI is a full description of the data, the second URI is a link to a zip file containing those data.
 
@@ -25,7 +25,7 @@ The first line of this csv file contains the column names.
 
 Description of the variables in the tidy dataset:
 
-. Subject: he first column is the number of the subject that carried out the activity, 
-. Activity: Name in cleartext of the activity that was carried out by the subject from the first column.
-. The subsequent colums are the mean values and standard deviation of the different signals, as described in the file "features_info.txt"  For a full description of those features, refer to this file.
+* Subject: he first column is the number of the subject that carried out the activity, 
+* Activity: Name in cleartext of the activity that was carried out by the subject from the first column.
+* The subsequent colums are the mean values and standard deviation of the different signals, as described in the file "features_info.txt"  For a full description of those features, refer to this file.
 
