@@ -7,8 +7,6 @@ library(data.table)
 if(!exists("valtest")){valtest <- read.table("./test/X_test.txt")}
 if(!exists("valtrain")){valtrain <- read.table("./train/X_train.txt")}
 ## once the test and train values are read, we merge both tables. 
-## DO NOT USE THE MERGE function as it will not keep the row order !!!
-## keeping row order is important for this project
 if(!exists("values")){values <- rbind(valtest,valtrain)}
 
 ## do the same for the subject and activity files
@@ -20,6 +18,8 @@ if(!exists("acttrain")){acttrain <- read.table("./train/y_train.txt")}
 if(!exists("activ")){activ <- rbind(acttest, acttrain)}
 
 ## now get the activity labels and the features
+## as.character is done to convert them from factor to character list.
+## the same can be obtained using the "stringsAsFactors = FALSE option in the read.table function
 if(!exists("activitylabels")){
         activitylabels <- read.table("activity_labels.txt")
         activitylabels[] <- lapply(activitylabels, as.character)
